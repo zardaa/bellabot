@@ -46,7 +46,7 @@ const {
     laknat,
     love,
     info,
-    donate,
+    donasi,
     alay,
     artinama,
     corona,
@@ -161,7 +161,7 @@ client.on('message-new', async (m) => {
            client.sendMessage(id, help.help(id, zardaa, tanggal, whatsapp, youtube, instagram, nomer),MessageType.text)
            break      
       case 'donate':
-           client.sendMessage(id, donate.donate(id, zardaa, tanggal),MessageType.text)
+           client.sendMessage(id, donasi.donasi(id, zardaa, tanggal),MessageType.text)
            break          
       case 'info':
            client.sendMessage(id, info.info(id, zardaa, tanggal),MessageType.text)
