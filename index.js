@@ -46,6 +46,7 @@ const {
     laknat,
     love,
     info,
+    tambahan,
     donasi,
     alay,
     artinama,
@@ -924,7 +925,7 @@ case 'filmanime':
             } else if (args.length === 2) {
                 const url = args[1]
                 if (url.match(isUrl)) {
-                    await client.sendStickerfromUrl(from, url, { method: 'get' })
+                    await client.sendStikerfromUrl(from, url, { method: 'get' })
                         .catch(err => console.log('Caught exception: ', err))
                 } else {
                     client.reply(from, mess.error.Iv, id)
