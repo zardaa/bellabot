@@ -1,12 +1,21 @@
+
+/*
+* JANGAN UBAH-UBAH INFO!!!
+* "JANGAN MODAL NAMA DOANG BRO!!!"
+* SCRIPT BY ARIS187 ID
+* JANGAN MODAL NAMA DOANG BOSQ
+* HARGAILAH YG MEMBUAT SCRIPT INI BOSQ
+* JANGAN UBAH-UBAH INFO!!!
+* ARIS187 ID
+* BOLEH UBAH TAPI KECUALI INFO!!!
+*/
 const qrcode = require("qrcode-terminal")
 const moment = require("moment-timezone")
 const fs = require("fs")
-const donate = require("./lib/donate.js");
-const axios = require("axios");
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:Ridwan\n' // full name
-            + 'ORG:Creator Bellabot;\n' // the organization of the contact
+            + 'ORG:Creator Zarda;\n' // the organization of the contact
             + 'TEL;type=CELL;type=VOICE;waid=6282397075810:+62 823-9707-5810\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 
@@ -47,7 +56,8 @@ const {
     beruang,
     laknat,
     love,
-    info, 
+    info,
+    donate,
     alay,
     artinama,
     corona,
@@ -57,7 +67,6 @@ const {
     jodoh,
     jsholat,
     lirik,
-    chord,
     nulis,
     readTextInimage,
     pantun,
@@ -84,13 +93,14 @@ const {
     randomcry,
     logogaming,
     puisi2,
+    joox,
     resep,
     namaninja,
     bitly,
     nekonime,
     cektanggal,
-    joox,
-    zodiak, 
+    chord,
+    zodiak,
     fb,
     simi,
     gtts,
