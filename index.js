@@ -912,7 +912,7 @@ case 'filmanime':
            break
          
       
-     case 'sticker':
+     case 'stiker':
             if (isMedia && type === 'image') {
                 const mediaData = await decryptMedia(message, uaOverride)
                 const imageBase64 = `data:${mimetype};base64,${mediaData.toString('base64')}`
