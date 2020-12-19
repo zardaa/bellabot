@@ -1,18 +1,9 @@
-/*
-* JANGAN UBAH-UBAH INFO!!!
-* "JANGAN MODAL NAMA DOANG BRO!!!"
-* SCRIPT BY ARIS187 ID
-* JANGAN MODAL NAMA DOANG BOSQ
-* HARGAILAH YG MEMBUAT SCRIPT INI DOANG
-* JANGAN UBAH-UBAH INFO!!!
-* INI BUATAN BELLABOT
-* BOLEH UBAH TAPI KECUALI INFO!!!
-*/
+
 const qrcode = require("qrcode-terminal")
 const moment = require("moment-timezone")
 const fs = require("fs")
 const donate = require("./lib/donate.js");
-const joox = require("./lib/joox.js");
+const chord = require("./lib/chord.js");
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:Ridwan\n' // full name
