@@ -1,14 +1,14 @@
-const qrcode = require("qrcode-terminal");
-const moment = require("moment-timezone");
-const fs = require("fs");
-const axios = require("axios");
-const donate = require("./lib/donate.js");
-const tambahan = require("./lib/tambahan.js");
+const qrcode = require("qrcode-terminal")
+const moment = require("moment-timezone")
+const fs = require("fs")
+const axios = require("axios")
+const donate = require("./lib/donate.js")
+const tambahan = require("./lib/tambahan.js")
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Ridwan\n' // full name
-            + 'ORG:Creator Zarda;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=6282397075810:+62 823-9707-5810\n' // WhatsApp ID + phone number
+            + 'FN:Aris\n' // full name
+            + 'ORG:Creator AR15BOT;\n' // the organization of the contact
+            + 'TEL;type=CELL;type=VOICE;waid=6285722553839:+62 857-2255-3839\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
