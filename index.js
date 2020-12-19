@@ -3,7 +3,6 @@ const qrcode = require("qrcode-terminal")
 const moment = require("moment-timezone")
 const fs = require("fs")
 const donate = require("./lib/donate.js");
-const chord = require("./lib/chord.js");
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:Ridwan\n' // full name
@@ -58,6 +57,7 @@ const {
     jodoh,
     jsholat,
     lirik,
+    chord,
     nulis,
     readTextInimage,
     pantun,
@@ -89,6 +89,7 @@ const {
     bitly,
     nekonime,
     cektanggal,
+    joox,
     zodiak, 
     fb,
     simi,
@@ -132,7 +133,7 @@ fs.existsSync('./session.json') && client.loadAuthInfo('./session.json')
 
 client.connect();
 
-// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@_sadboy.ig`)
+// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@ridwan._.anugrah`)
 
 client.on('message-status-update', json => {
    const participant = json.participant ? ' (' + json.participant + ')' : ''
