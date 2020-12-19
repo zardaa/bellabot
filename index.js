@@ -3,6 +3,7 @@ const qrcode = require("qrcode-terminal")
 const moment = require("moment-timezone")
 const fs = require("fs")
 const donate = require("./lib/donate.js");
+const axios = require("axios");
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:Ridwan\n' // full name
