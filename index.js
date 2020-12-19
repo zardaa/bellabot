@@ -1,16 +1,7 @@
-
-/*
-* JANGAN UBAH-UBAH INFO!!!
-* "JANGAN MODAL NAMA DOANG BRO!!!"
-* SCRIPT BY Bellabot
-* JANGAN MODAL NAMA DOANG
-* HARGAILAH YG MEMBUAT SCRIPT INI
-* JANGAN UBAH-UBAH INFO!!!
-* BOLEH UBAH TAPI KECUALI INFO!!!
-*/
-const qrcode = require("qrcode-terminal")
-const moment = require("moment-timezone")
-const fs = require("fs")
+const qrcode = require("qrcode-terminal");
+const moment = require("moment-timezone");
+const fs = require("fs");
+const axios = require("axios");
 const donate = require("./lib/donate.js");
 const tambahan = require("./lib/tambahan.js");
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
