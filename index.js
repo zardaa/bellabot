@@ -13,9 +13,9 @@ const moment = require("moment-timezone")
 const fs = require("fs")
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Aris\n' // full name
-            + 'ORG:Creator AR15BOT;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=6285722553839:+62 857-2255-3839\n' // WhatsApp ID + phone number
+            + 'FN:Ridwan\n' // full name
+            + 'ORG:Creator Bellabot;\n' // the organization of the contact
+            + 'TEL;type=CELL;type=VOICE;waid=6282397075810:+62 823-9707-5810\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
@@ -24,7 +24,7 @@ const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Jul
 const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
-    A187: '👾AR15BOT👾',
+    A187: '💀Bellabot💀',
     instagram: 'https://instagram.com/ridwan._.anugrah',
     nomer: 'wa.me/6282397075710',
     aktif: '24 JAM',
