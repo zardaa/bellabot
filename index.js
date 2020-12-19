@@ -1,36 +1,4 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@zardaa 
-zardaa
-/
-AR15BOT
-Template
-forked from A187ID/AR15BOT
-0
-025
-Code
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-AR15BOT/index.js /
-@A187ID
-A187ID Update index.js
-Latest commit c3ef1ff 2 days ago
- History
- 1 contributor
-950 lines (917 sloc)  34.9 KB
-  
-/*
+ /*
 * JANGAN UBAH-UBAH INFO!!!
 * "JANGAN MODAL NAMA DOANG BRO!!!"
 * SCRIPT BY ARIS187 ID
