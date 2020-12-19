@@ -1,4 +1,3 @@
-
 const qrcode = require("qrcode-terminal")
 const moment = require("moment-timezone")
 const fs = require("fs")
@@ -55,7 +54,6 @@ const {
     kbbi,
     downloadimage,
     igStalk,
-    tambahan,
     jodoh,
     jsholat,
     lirik,
