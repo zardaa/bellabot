@@ -1,26 +1,60 @@
-## NAMA BOT
-BOT WHATSAPP YANG BISA DIGUNAKAN DI TERMUX
+## BELLABOT
+Ini adalah scrip modifikasi dari saya sendiri bellabot
 
 
+### ALAT DAN BAHAN <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Hello_Big.gif" width="29px">
 
+Siapin alat dan bahannya.
 
-
-
-
-## CARA INSTALL
-# TERMUX
 ```bash
-> download termux
-> buka
-> pkg install git
-> pkg install ffmpeg
-> pkg install nodejs
-> apt update && apt upgrade
-> git clone https://github.com/benisadewa/reuzsc
-> cd reuzsc
-> bash install.sh
-> node index.js
+
+> niat
+
+> 2 handphone (1 buat jalanin sc, 1 buat scan kode qr kak)
+
+> jaringan internet kenceng,kuota+
+
+> penyimpanan yang memadai
+
+> aplikasi whatsapp
+
+> aplikasi termux
+
+> kopi+rokok ;v
+
 ```
+
+### CARA INSTALLNYA  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/hmm.gif" width="29px">
+
+Script ini di modifikasi sama saya sendiri Aris187 ID.
+
+```bash
+
+> kalo lu belum punya apk termux, download di playstore
+
+> masuk ke apk termux lalu ketik dibawah ini!
+
+> termux-setup-storage
+
+> pkg install git && pkg install tesseract && pkg install wget && pkg install ffmpeg && pkg install nodejs
+
+> apt update && apt upgrade
+
+> git clone https://github.com/zardaa/bellabot
+
+> cd bellabot
+
+> npm i -g cwebp && npm i node-tesseract-ocr && npm i -g ytdl && npm i  && npm i got && node index js
+
+> Tinggal scan kode qr dan selesai deh
+
+
+
+
+
+
+
+
 
 
 # FITUR
@@ -66,8 +100,6 @@ ket : ✅ : aktif
 
 
 
-## THANKS TO
-* [`termux-whatsapp-bot`](https://github.com/fdciabdul/termux-whatsapp-bot)
 
 ## DONASI
-*
+* pulsa:082397075810
