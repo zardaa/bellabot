@@ -160,7 +160,7 @@ client.on('message-new', async (m) => {
        case 'help':
            client.sendMessage(id, help.help(id, zardaa, tanggal, whatsapp, youtube, instagram, nomer),MessageType.text)
            break      
-      case 'donate':
+      case 'donasi':
            client.sendMessage(id, donasi.donasi(id, zardaa, tanggal),MessageType.text)
            break          
       case 'info':
