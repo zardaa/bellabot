@@ -59,7 +59,6 @@ const {
     laknat,
     love,
     info,
-    donate,
     alay,
     artinama,
     corona,
