@@ -54,6 +54,7 @@ const {
     kbbi,
     downloadimage,
     igStalk,
+    tambahan,
     jodoh,
     jsholat,
     lirik,
