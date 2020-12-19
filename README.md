@@ -25,24 +25,42 @@ BOT WHATSAPP YANG BISA DIGUNAKAN DI TERMUX
 
 # FITUR
 
-| KEADAAN       |               FITUR     |
-| :-----------: | :--------------------------------:  |
-|       ✅       |    PANTUN                         |
-|       ✅       | ANIMEPICT                         |
-|       ✅       | STICKER                           |
-|       ✅       | NULIS                             |
-|       ✅       | QUOTES                            |
-|       ✅       | RANDOM PICT                       |
-|       ✅       | ANIMEPICT                         |
-|       ✅       | LIRIK                             |
-|       ✅       | ALAY                              |
-|       ✅       | YT,YTMP3,IG,TWT DOWNLOADER        |
-|       ✅       | WIKIPEDIA                         |
-|       ✅       | ARTI NAMA                         |
-|       ✅       | SHOLAT                            |
-|       ✅       | QURAN                             |
-|       ✅       | KAMING SUN                        |
-
+|    BELLABOT    |                   Feature        |
+| :-----------:  | :------------------------------: |
+|       ✅       | Sticker Creator                  |
+|       ✅       | Nulis                            |
+|       ✅       | Covid (new)                      |
+|       ✅       | Alay (new)                       |
+|       ✅       | Lirik (new)                      |
+|       ✅       | Foto Anime                       |
+|       ✅       | Foto cewek/cowok (new)           |
+|       ✅       | Pantun                           |
+|       ✅       | Youtube Downloader               |
+|       ✅       | Quotes                           |
+|       ✅       | Nama (new)                       |
+|       ✅       | Foto Anime                       |
+|       ✅       | Pasangan (new)                   |
+|       ✅       | Sholat (new )                    |
+|       ✅       | Suara Google (fix)               |
+|       ✅       | Quran                            |
+|       ✅       | Youtube MP3 Downloader           |
+|       ✅       | Intagram Downloader              |
+|       ✅       | Twitter Downloader               |
+|       ✅       | Facebook Downloader              |
+|       ✅       | TikTok Downloader  (new)         |
+|       ✅       | Wikipedia                        |
+|       ✅       | Say                              |
+|       ✅       | Toxic (new)                      |
+|       ✅       | loli                             |
+|       ✅       | hentai                           |
+|       ✅       | Owner (new)                      |
+|       ✅       | kata bijak                       |
+|       ✅       | Fakta                            |
+|       ✅       | Pokemon                          |
+|       ✅       | Info                             |
+|       ✅       | Donate                           |
+|       ✅       | 18+.                             |
+|                   MORE  Fitur                     |
 ket : ✅ : aktif
 
 
