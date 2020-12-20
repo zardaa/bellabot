@@ -1,11 +1,10 @@
 
 const XPTN = 'ᖇEᐯIᐯE IᑎᗪO ᖇOᒪEᑭᒪᗩY'; // Jangan lu ubah² kalo gak mau error
-const instagram = 'https://instagram.com/reviveindo_rp'; //Jangan lu ubah² kalo gak mau error
-const nomer = 'https://wa.me/+628881372457'; // Jangan lu ubah² kalo gak mau error
 const aktif = '24 JAM'; // Kapan bot lu aktif
-const groupwa = 'https://chat.whatsapp.com/E8VriS0ojj53PX5wkhPYaD'; // Jangan lu ubah² kalo gak mau error
-const youtube = 'https://chat.whatsapp.com/E8VriS0ojj53PX5wkhPYaD'; // Jangan lu ubah² kalo gak mau error
+
 //
+
+
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
 const cheerio = require("cheerio");
