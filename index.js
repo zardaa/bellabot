@@ -25,6 +25,8 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'TEL;type=CELL;type=VOICE;waid=6282397075810:+62 823-9707-810\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 //
+const { A187, tanggal, waktu, instagram, whatsapp, youtube, nomer, aktif, ontime } = config
+
 const
 {
    WAConnection,
@@ -37,25 +39,88 @@ const
    ReconnectMode,
    ProxyAgent,
    waChatKey,
-   GroupSettingChange,
-   mentionedJid,
-   processTime,
-} = require("@adiwajshing/baileys");
-var jam = moment().format("HH:mm");
+} = require("@adiwajshing/baileys")
 
-function foreach(arr, func)
-{
-   for (var i in arr)
-   {
-      func(i, arr[i]);
-   }
-}
-const conn = new WAConnection()
-conn.on('qr', qr =>
-{
-   qrcode.generate(qr,
-   {
-      small: true
+const {
+    help,
+    rumah,
+    beruang,
+    laknat,
+    love,
+    info,
+    donasi, 
+    alay,
+    artinama,
+    corona,
+    kbbi,
+    downloadimage,
+    igStalk,
+    jodoh,
+    jsholat,
+    lirik,
+    nulis,
+    readTextInimage,
+    pantun,
+    quotes,
+    searchYoutube,
+    surah,
+    tiktokdl,
+    tweetdl,
+    wiki,
+    ytdl,
+    bucin,
+    cersex,
+    cerpen,
+    puisi1,
+    randomkis,
+    renungan,
+    gltext,
+    cuaca, 
+    texthunder,
+    memecreate,
+    waifu2,
+    blackpink,
+    text3d,
+    randomcry,
+    logogaming,
+    puisi2,
+    joox,
+    resep,
+    namaninja,
+    bitly,
+    nekonime,
+    cektanggal,
+    chord,
+    zodiak,
+    fb,
+    simi,
+    gtts,
+    wikien,
+    spamsms,
+    spamcall,
+    spamgmail,
+    covidcountry,
+    infoanime,
+    gay,
+    ytmp3,
+    ssweb,
+    infogempa,
+    indohot,
+    loli,
+    ttp,
+    map,
+    waifu
+} = require('./lib')
+
+const { animPict, cewePict, cowoPict } = require('./lib/pict')
+
+const { exec } = require("child_process")
+
+const client = new WAConnection()
+
+client.on('qr', qr => {
+   qrcode.generate(qr, { small: true })
+   console.log(`[ ${time} ] QR code is ready, selamat mencoba`)
    });
    console.log(`[ ${moment().format("HH:mm:ss")} ] MASLENT Ready scan now!`);
 });
