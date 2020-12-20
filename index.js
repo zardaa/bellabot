@@ -9,8 +9,6 @@ const fetch = require('node-fetch');
 const urlencode = require("urlencode");
 const axios = require("axios");
 const imageToBase64 = require('image-to-base64');
-const xp = require("./lib/xp.js");
-const donasi = require("./lib/donasi.js");
 const readTextInImage = require('./lib/ocr')
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
@@ -137,11 +135,11 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @mslent`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @ridwan._.anugrah`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @mslent`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @ridwan._.anugrah`)
 })
 
 conn.on('message-new', async(m) =>
