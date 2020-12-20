@@ -26,6 +26,96 @@ const config = {
 
 const { zardaa, tanggal, waktu, instagram, whatsapp, youtube, nomer, aktif, ontime } = config
 
+}
+//chat
+if (text == 'halo')
+{
+conn.sendMessage(id, tambahan.halo ,MessageType.text);
+}
+else if (text == '!info')
+{
+conn.sendMessage(id, tambahan.info ,MessageType.text);
+}
+else if (text == '#info')
+{
+conn.sendMessage(id, tambahan.info ,MessageType.text);
+}
+else if (text == 'Hai')
+{
+conn.sendMessage(id, tambahan.hai ,MessageType.text);
+}
+else if (text == 'assalamualaikum')
+{
+conn.sendMessage(id, tambahan.ass ,MessageType.text);
+}
+else if (text == 'bro')
+{
+conn.sendMessage(id, tambahan.bro ,MessageType.text);
+}
+else if (text == 'p')
+{
+conn.sendMessage(id, tambahan.p ,MessageType.text);
+}
+else if (text == 'test')
+{
+  conn.sendMessage(id, tambahan.test, MessageType.text);
+}
+else if (text == 'HALO')
+{
+conn.sendMessage(id, tambahan.halo ,MessageType.text);
+}
+else if (text == 'Halo')
+{
+conn.sendMessage(id, tambahan.halo ,MessageType.text);
+}
+else if (text == 'Hai')
+{
+conn.sendMessage(id, tambahan.hai ,MessageType.text);
+}
+else if (text == 'Assalamualaikum')
+{
+conn.sendMessage(id, tambahan.ass ,MessageType.text);
+}
+else if (text == 'Bro')
+{
+conn.sendMessage(id, tambahan.bro ,MessageType.text);
+}
+else if (text == '!help')
+{
+}
+else if (text == '¥rules')
+{
+conn.sendMessage(id, tambahan.rules ,MessageType.text);
+}
+else if (text == '#menu')
+{
+conn.sendMessage(id, tambahan.menu ,MessageType.text);
+}
+else if (text == 'P')
+{
+conn.sendMessage(id, tambahan.p ,MessageType.text);
+}
+else if (text == 'Test')
+{
+conn.sendMessage(id, tambahan.test, MessageType.text);
+}
+else if (text == 'HAI')
+{
+conn.sendMessage(id, tambahan.hai ,MessageType.text);
+}
+else if (text == 'ASSALAMUALAIKUM')
+{
+conn.sendMessage(id, tambahan.ass ,MessageType.text);
+}
+else if (text == 'BRO')
+{
+conn.sendMessage(id, tambahan.bro ,MessageType.text);
+}
+else if (text == 'TEST')
+{
+  conn.sendMessage(id, tambahan.test, MessageType.text);
+}
+
 const
 {
    WAConnection,
