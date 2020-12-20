@@ -1,4 +1,11 @@
 
+const XPTN = 'ᖇEᐯIᐯE IᑎᗪO ᖇOᒪEᑭᒪᗩY'; // Jangan lu ubah² kalo gak mau error
+const instagram = 'https://instagram.com/reviveindo_rp'; //Jangan lu ubah² kalo gak mau error
+const nomer = 'https://wa.me/+628881372457'; // Jangan lu ubah² kalo gak mau error
+const aktif = '24 JAM'; // Kapan bot lu aktif
+const groupwa = 'https://chat.whatsapp.com/E8VriS0ojj53PX5wkhPYaD'; // Jangan lu ubah² kalo gak mau error
+const youtube = 'https://chat.whatsapp.com/E8VriS0ojj53PX5wkhPYaD'; // Jangan lu ubah² kalo gak mau error
+//
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
 const cheerio = require("cheerio");
@@ -15,13 +22,11 @@ const info = require("./lib/info.js");
 const readTextInImage = require('./lib/ocr')
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:XP Zarda\n' // full name
-            + 'ORG:Owner BEllabot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=6282397075810:+62 823-9707-810\n' // WhatsApp ID + phone number
+            + 'FN:XP Ganss\n' // full name
+            + 'ORG:Owner LENT Bot;\n' // the organization of the contact
+            + 'TEL;type=CELL;type=VOICE;waid=628165466368:+62 816-5466-368\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 //
-const { zardaa, tanggal, waktu, instagram, whatsapp, youtube, nomer, aktif, ontime } = config
-
 const
 {
    WAConnection,
@@ -34,7 +39,11 @@ const
    ReconnectMode,
    ProxyAgent,
    waChatKey,
-} = require("@adiwajshing/baileys")
+   GroupSettingChange,
+   mentionedJid,
+   processTime,
+} = require("@adiwajshing/baileys");
+var jam = moment().format("HH:mm");
 
 const {
     help,
@@ -43,7 +52,7 @@ const {
     laknat,
     love,
     info,
-    donasi, 
+    donate,
     alay,
     artinama,
     corona,
@@ -107,15 +116,19 @@ const {
     waifu
 } = require('./lib')
 
-const { animPict, cewePict, cowoPict } = require('./lib/pict')
-
-const { exec } = require("child_process")
-
-const client = new WAConnection()
-
-client.on('qr', qr => {
-   qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code is ready, selamat mencoba`)
+function foreach(arr, func)
+{
+   for (var i in arr)
+   {
+      func(i, arr[i]);
+   }
+}
+const conn = new WAConnection()
+conn.on('qr', qr =>
+{
+   qrcode.generate(qr,
+   {
+      small: true
    });
    console.log(`[ ${moment().format("HH:mm:ss")} ] MASLENT Ready scan now!`);
 });
@@ -132,7 +145,7 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @ridwan._.anugrah`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @mslent`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
@@ -179,10 +192,10 @@ conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsA
 }
 
 //Chat XP-TN
-else if (text == 'ass'){
-conn.sendMessage(id, 'Waalaikumsalam, Ketik .help/.info/.donasi Contoh #help' ,MessageType.text);
+else if (text == 'assalamualaikum'){
+conn.sendMessage(id, '3aalaikumsalam, Ketik .help/.info/.donasi Contoh #help' ,MessageType.text);
 }
-else if (text == 'Ass'){
+else if (text == 'salam'){
 conn.sendMessage(id, 'Waalaikumsalam, Ketik .help/.info/.donasi Contoh #help' ,MessageType.text);
 }
 else if (text == 'asalamualaikum'){
@@ -222,7 +235,7 @@ else if (text == 'Anjing'){
 conn.sendMessage(id, 'Jangan toxic anjing' ,MessageType.text);
 }
 else if (text == 'Bacot'){
-conn.sendMessage(id, 'sadar goblok' ,MessageType.text);
+conn.sendMessage(id, 'lu bacot_-' ,MessageType.text);
 }
 else if (text == 'Test'){
 conn.sendMessage(id, 'Test 1,2,3 ketik .help' ,MessageType.text);
@@ -255,10 +268,10 @@ else if (text == 'Min'){
 conn.sendMessage(id, 'Ya?, Ketik .help/.info/.donasi Contoh .help' ,MessageType.text);
 }
 else if (text == 'Sayang'){
-conn.sendMessage(id, 'sayang sayang matamu' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, Ketik .help/.info/.donasi Contoh .help' ,MessageType.text);
 }
 else if (text == 'I love u'){
-conn.sendMessage(id, 'Najis' ,MessageType.text);
+conn.sendMessage(id, 'love you too' ,MessageType.text);
 }
 else if (text == 'Mas'){
 conn.sendMessage(id, 'Ya?, Ketik .help/.info/.donasi Contoh .help' ,MessageType.text);
@@ -309,7 +322,7 @@ else if (text == 'Thanks'){
 conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
 }
 
-//fitur
+// Fitur
 
 const { animPict, cewePict, cowoPict } = require('./lib/pict')
 
