@@ -14,7 +14,6 @@ const dl = require("./lib/downloadImage.js");
 const fetch = require('node-fetch');
 const axios = require("axios");
 const imageToBase64 = require('image-to-base64');
-const xp = require("./lib/xp.js");
 const readTextInImage = require('./lib/ocr')
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
