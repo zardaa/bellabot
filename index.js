@@ -111,12 +111,6 @@ const {
     waifu
 } = require('./lib')
 
-// FF XP-TN
-if(text.includes(".cek")){
-var num = text.replace(/.cek/ , "")
-var idn = num.replace("0","+62");
-}
-
 //Chat XP-TN
 else if (text == 'assalamualaikum'){
 conn.sendMessage(id, '3aalaikumsalam, Ketik .help/.info/.donasi Contoh #help' ,MessageType.text);
