@@ -38,6 +38,23 @@ const config = {
 
 const { zardaa, tanggal, waktu, instagram, whatsapp, youtube, nomer, aktif, ontime } = config
 
+function foreach(arr, func)
+{
+   for (var i in arr)
+   {
+      func(i, arr[i]);
+   }
+}
+const conn = new WAConnection()
+conn.on('qr', qr =>
+{
+   qrcode.generate(qr,
+   {
+      small: true
+   });
+   console.log(`[ ${moment().format("HH:mm:ss")} ] MASLENT Ready scan now!`);
+});
+
 conn.on('credentials-updated', () =>
 {
    // save credentials whenever updated
