@@ -110,6 +110,7 @@ const {
     map,
     waifu
 } = require('./lib')
+
 }
 
 //Chat XP-TN
