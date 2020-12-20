@@ -106,6 +106,18 @@ const {
     map,
     waifu
 } = require('./lib')
+
+// FF XP-TN
+if(text.includes(".cek")){
+var num = text.replace(/.cek/ , "")
+var idn = num.replace("0","+62");
+
+console.log(id);
+const gg = idn+'@s.whatsapp.net'
+
+const exists = await conn.isOnWhatsApp (gg)
+console.log(exists);
+conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsApp`, MessageType.text)
 }
 
 else if (text == 'assalamualaikum'){
