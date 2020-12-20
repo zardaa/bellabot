@@ -102,7 +102,7 @@ conn.sendMessage(id, tambahan.bro ,MessageType.text);
 }
 else if (text == 'TEST')
 {
-  conn.sendMessage(id, tambahan.test, MessageType.text);
+conn.sendMessage(id, tambahan.test, MessageType.text);
 }
 
 const
