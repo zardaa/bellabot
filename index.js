@@ -106,8 +106,8 @@ const {
     map,
     waifu
 } = require('./lib')
+}
 
-{
 else if (text == 'assalamualaikum'){
 conn.sendMessage(id, 'Waalaikumsalam' ,MessageType.text);
 }
