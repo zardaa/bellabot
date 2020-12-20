@@ -1,10 +1,7 @@
 
 const XPTN = 'ᖇEᐯIᐯE IᑎᗪO ᖇOᒪEᑭᒪᗩY'; // Jangan lu ubah² kalo gak mau error
 const aktif = '24 JAM'; // Kapan bot lu aktif
-
 //
-
-
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
 const cheerio = require("cheerio");
