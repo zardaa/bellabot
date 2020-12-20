@@ -107,8 +107,7 @@ const {
     waifu
 } = require('./lib')
 
-
-//Chat XP-TN
+}
 else if (text == 'assalamualaikum'){
 conn.sendMessage(id, 'Waalaikumsalam' ,MessageType.text);
 }
