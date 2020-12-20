@@ -37,15 +37,15 @@ const config = {
 const { zardaa, tanggal, waktu, instagram, whatsapp, youtube, nomer, aktif, ontime } = config
 
 else if (text == 'assalamualaikum'){
-conn.sendMessage(id, '3aalaikumsalam' ,MessageType.text);
-}
-else if (text == 'salam'){
-conn.sendMessage(id, 'Waalaikumsalam' ,MessageType.text);
-}
-else if (text == 'asalamualaikum'){
-conn.sendMessage(id, 'Waalaikumsalam' ,MessageType.text);
+conn.sendMessage(id, 'waalaikumsalam' ,MessageType.text);
 }
 else if (text == 'Assalamualaikum'){
+conn.sendMessage(id, 'Waalaikumsalam' ,MessageType.text);
+}
+else if (text == 'ass'){
+conn.sendMessage(id, 'Waalaikumsalam' ,MessageType.text);
+}
+else if (text == 'Ass'){
 conn.sendMessage(id, 'Waalaikumsalam' ,MessageType.text);
 }
 else if (text == 'p'){
