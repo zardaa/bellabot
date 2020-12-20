@@ -32,13 +32,13 @@ if (text == 'halo')
 {
 conn.sendMessage(id, tambahan.halo ,MessageType.text);
 }
-else if (text == '!info')
+else if (text == 'kontol')
 {
-conn.sendMessage(id, tambahan.info ,MessageType.text);
+conn.sendMessage(id, tambahan.kontol ,MessageType.text);
 }
-else if (text == '#info')
+else if (text == 'tolol')
 {
-conn.sendMessage(id, tambahan.info ,MessageType.text);
+conn.sendMessage(id, tambahan.tolol ,MessageType.text);
 }
 else if (text == 'Hai')
 {
@@ -58,7 +58,7 @@ conn.sendMessage(id, tambahan.p ,MessageType.text);
 }
 else if (text == 'test')
 {
-  conn.sendMessage(id, tambahan.test, MessageType.text);
+conn.sendMessage(id, tambahan.test, MessageType.text);
 }
 else if (text == 'HALO')
 {
@@ -79,17 +79,6 @@ conn.sendMessage(id, tambahan.ass ,MessageType.text);
 else if (text == 'Bro')
 {
 conn.sendMessage(id, tambahan.bro ,MessageType.text);
-}
-else if (text == '!help')
-{
-}
-else if (text == '¥rules')
-{
-conn.sendMessage(id, tambahan.rules ,MessageType.text);
-}
-else if (text == '#menu')
-{
-conn.sendMessage(id, tambahan.menu ,MessageType.text);
 }
 else if (text == 'P')
 {
