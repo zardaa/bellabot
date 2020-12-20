@@ -17,8 +17,7 @@ const urlencode = require("urlencode");
 const axios = require("axios");
 const imageToBase64 = require('image-to-base64');
 const xp = require("./lib/xp.js");
-const donate = require("./lib/donate.js");
-const info = require("./lib/info.js");
+const donasi = require("./lib/donasi.js");
 const readTextInImage = require('./lib/ocr')
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
