@@ -8,7 +8,6 @@ const youtube = 'https://chat.whatsapp.com/E8VriS0ojj53PX5wkhPYaD'; // Jangan lu
 //
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
-const cheerio = require("cheerio");
 const get = require('got')
 const fs = require("fs");
 const dl = require("./lib/downloadImage.js");
