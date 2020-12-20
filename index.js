@@ -1,3 +1,5 @@
+const XPTN = 'ᖇEᐯIᐯE IᑎᗪO ᖇOᒪEᑭᒪᗩY';
+//
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
 const cheerio = require("cheerio");
