@@ -36,6 +36,23 @@ const config = {
 
 const { zardaa, tanggal, waktu, instagram, whatsapp, youtube, nomer, aktif, ontime } = config
 
+conn.on('credentials-updated', () =>
+{
+   // save credentials whenever updated
+   console.log(`credentials updated$`)
+   const authInfo = conn.base64EncodedAuthInfo() // get all the auth info we need to restore this session
+   fs.writeFileSync('./session.json', JSON.stringify(authInfo, null, '\t')) // save this info to a file
+})
+fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
+// uncomment the following line to proxy the connection; some random proxy I got off of: https://proxyscrape.com/free-proxy-list
+//conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
+conn.connect();
+
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @mslent`))
+conn.on('message-status-update', json =>
+{
+   const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @mslent`)
 })
 
 conn.on('message-new', async(m) =>
