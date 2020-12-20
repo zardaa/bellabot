@@ -32,9 +32,11 @@ const config = {
 
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
-})
+}
 
 const { zardaa, tanggal, waktu, instagram, whatsapp, youtube, nomer, aktif, ontime } = config
+
+})
 
 conn.on('message-new', async(m) =>
 {
