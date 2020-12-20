@@ -1,6 +1,5 @@
 
 const XPTN = 'ᖇEᐯIᐯE IᑎᗪO ᖇOᒪEᑭᒪᗩY'; // Jangan lu ubah² kalo gak mau error
-const instagram = 'https://instagram.com/ridwan._.anugrah'; //Jangan lu ubah² kalo gak mau error
 const nomer = 'https://wa.me/+6282397075810'; // Jangan lu ubah² kalo gak mau error
 const aktif = '24 JAM'; // Kapan bot lu aktif
 //
