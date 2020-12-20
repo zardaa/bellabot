@@ -111,6 +111,15 @@ const {
     waifu
 } = require('./lib')
 
+conn.on('qr', qr =>
+{
+   qrcode.generate(qr,
+   {
+      small: true
+   });
+   console.log(`[ ${moment().format("HH:mm:ss")} ] MASLENT Ready scan now!`);
+});
+
 conn.on('credentials-updated', () =>
 {
    // save credentials whenever updated
