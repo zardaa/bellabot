@@ -1,15 +1,12 @@
 
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
-const cheerio = require("cheerio");
-const get = require('got')
 const fs = require("fs");
 const dl = require("./lib/downloadImage.js");
 const fetch = require('node-fetch');
 const urlencode = require("urlencode");
 const axios = require("axios");
 const imageToBase64 = require('image-to-base64');
-const readTextInImage = require('./lib/ocr')
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:XP Ganss\n' // full name
