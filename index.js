@@ -111,13 +111,9 @@ const {
     waifu
 } = require('./lib')
 
-conn.on('qr', qr =>
-{
-   qrcode.generate(qr,
-   {
-      small: true
-   });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] MASLENT Ready scan now!`);
+client.on('qr', qr => {
+   qrcode.generate(qr, { small: true })
+   console.log(`[ ${time} ] QR code is ready, selamat mencoba`)
 });
 
 conn.on('credentials-updated', () =>
